@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML,CSS,Firebase,Javascript">
+    <meta name="author" content="Divya Goyal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container" align="center">
+        <h1 id="heading">Registeration Form</h1>
+        <input type="text" placeholder="Enter Name" class="input_elem" name="name" id="form-name" required><br/>
+ 
+        <input type="text" placeholder="Enter Email" name="email" class="input_elem" id="form-email" required><br/>
+        <input type="text" placeholder="Enter City" name="city" class="input_elem" id="form-city"><br/>
+        <input type="tel" placeholder="Enter Phone Number" name="phone" max-length=10 class="input_elem" id="form-phone"><br/>
+        <button type="submit" class="signupbtn" id="sign-btn" onclick="signMe()">Register</button>
+      </div>
+      
+<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+
+
+      <script src="index.js"></script>
+  </body>
+</html>
