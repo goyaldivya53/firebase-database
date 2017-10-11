@@ -22,7 +22,9 @@
     var city=document.getElementById("form-city").value;
     var phone=document.getElementById("form-phone").value;
     var gender=document.querySelector('input[name="gender"]:checked').value;
- 
+    var e = document.getElementById("profession");
+    var prof = e.options[e.selectedIndex].value;
+    var dob=document.getElementById("dob").value;
     //Replacing . by comma
     let emailComma = email.replace(/\./g, ',');
     let ref = db.ref('email/' + emailComma);
@@ -38,7 +40,9 @@
             reading:document.querySelector('input[name="reading"]').checked,
             playing:document.querySelector('input[name="playing"]').checked
             
-        }
+        },
+        Profession: prof,
+        DOB:dob
     }, function(err){
         if (err) {
             alert("something went wrong!")

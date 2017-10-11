@@ -16,18 +16,29 @@
         <input type="text" placeholder="Enter Email" name="email" class="input_elem" id="form-email" required><br/>
         <input type="text" placeholder="Enter City" name="city" class="input_elem" id="form-city"><br/>
         <input type="tel" placeholder="Enter Phone Number" name="phone" max-length=10 class="input_elem" id="form-phone"><br/>
+        <label>DOB:</label>
+        <input type="date" placeholder="Your DOB" name="date" class="input_elem" id="dob"><br/>
         <div class="selections">
-        <label for="gender">Gender:</label>
+        <label for="gender" class="be-left">Gender:</label><br/>
         <input type="radio" name="gender" value="male" class="radio-btn" checked> Male
         <input type="radio" name="gender" value="female" class="radio-btn" > Female
         <input type="radio" name="gender" value="other" class="radio-btn" > Other<br/>
       </div>
       <div class="selections">
-        <label for="interest">Interest(s):</label>
-        <input type="checkbox" name="Coding">Coding
-        <input type="checkbox" name="Reading">Reading
-        <input type="checkbox" name="Playing">Playing<br/>
-        <div class="selections">
+        <label for="interest" class="be-left">Interest(s):</label>
+        <input type="checkbox" name="coding">Coding<br/>
+        <input type="checkbox" name="reading">Reading<br/>
+        <input type="checkbox" name="playing">Playing<br/>
+      </div>
+      <div class="selections">
+       <label class="be-left">Profession:</label><br/>
+      <select  id="profession">
+        <option value="student"  selected="selected">Student</option>
+        <option value="job">Job</option>
+        <option value="business">Business</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
         <button type="submit" class="signupbtn" id="sign-btn" onclick="signMe()">Register</button>
       </div>
       
