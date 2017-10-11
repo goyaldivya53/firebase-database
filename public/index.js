@@ -22,6 +22,7 @@
     var city=document.getElementById("form-city").value;
     var phone=document.getElementById("form-phone").value;
     var gender=document.querySelector('input[name="gender"]:checked').value;
+ 
     //Replacing . by comma
     let emailComma = email.replace(/\./g, ',');
     let ref = db.ref('email/' + emailComma);
@@ -31,7 +32,13 @@
         email:email,
         city:city,
         phone:phone,
-        gender:gender
+        gender:gender,
+        interest:{
+            coding:document.querySelector('input[name="coding"]').checked,
+            reading:document.querySelector('input[name="reading"]').checked,
+            playing:document.querySelector('input[name="playing"]').checked
+            
+        }
     }, function(err){
         if (err) {
             alert("something went wrong!")
