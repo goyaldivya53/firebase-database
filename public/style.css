@@ -6,7 +6,7 @@
     color: #F5B400;
     align-content: center;
     background: rgba(216, 215, 210, 0.23);
-    width:400px;
+    width:340px;
     height: 450px;
     padding:20px;
     margin-top:5%;
@@ -40,4 +40,7 @@
     font-family: 'Raleway', sans-serif;
     margin: 10px auto;
 
+}
+.radio-btn{
+    display: inline;
 }
